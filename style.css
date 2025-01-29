@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e2e2e2;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    font-family: "Libre Baskerville";
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#search-input{
+    padding: 8px;
+    width: 300px;
+    border: 1px solid rgba(0,0,0,.2);
+    font-size: 20px;
+}
+
+#search-button{
+    background-color: #0097b2;
+    color: white;
+    padding: 8px 16px;
+    border: 2px solid #ffbd59;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search-results{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.search-result{
+    width: 30%;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.search-result img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.search-result a{
+    text-align: left;
+    text-decoration: none;
+    color: #202020;
+}
+
+#show-more-button{
+    background-color: #0097b2;
+    color: white;
+    padding: 8px 16px;
+    border: 2px solid #ffbd59;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .search-result{
+    width: 40%;
+}
+}
+
+@media screen and (max-width: 480px) {
+.search-results{
+    width: 100%;
+}
+    .search-result{
+    width: 100%;
+}
+#search-input{
+    width: 100px;
+}
+}
